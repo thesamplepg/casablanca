@@ -7,11 +7,16 @@ const sassCompile = () => {
         .pipe(sass())
         .on('error', sass.logError)
         .pipe(autoprefixer())
-        .dest('./css');
+        .pipe(dest('./css'));
 }
 
-const watch = () => {
+const watcher = () => {
     watch('./sass/*.scss', sassCompile);
 }
 
-exports.defaultTask = watch;
+const defaultTask = (callback) => {
+    watcher();
+    callback();
+}
+
+exports.default = defaultTask;
