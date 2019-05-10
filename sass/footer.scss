@@ -1,0 +1,21 @@
+@import 'var';
+
+.main-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6.25em 0;
+    text-align: center;
+    background-color: #222;
+
+    p {
+        margin-top: 4em;
+        color: #e4e4e4;
+        font-family: $amble;
+
+        span {
+            color: #d87843;
+            font-family: $ambleBold
+        }
+    }
+}

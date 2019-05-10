@@ -1,0 +1,117 @@
+@import 'var';
+
+.container {
+    width: 1150px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 1150px) {
+        width: 100%;
+        padding: 0 1em;
+    }
+}
+
+.container-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+hr {
+    width: 86px;
+    height: 2px;
+    background-color: #222;
+    border: none;
+}
+
+.btn-transparent-black {
+    border: 3px solid black;
+    background-color: transparent;
+    color: #222222;
+    cursor: pointer;
+    transition: all .3s;
+    font-family: $amble;
+    margin: 0 auto;
+    font-weight: 700;
+
+    &:hover {
+        background-color: black;
+        color: #fff;
+    }
+}
+
+.section-header {
+    padding: 7.5em 0 6.5em 0;
+    text-align: center;
+
+    h2 {
+        font: 1.875em $john;
+        color: #222;
+    }
+
+    hr {
+        margin: 4.625em auto;
+    }
+
+    &__description {
+        max-width: 35.750em;
+        margin: 4.625em auto 0;
+        font: 1.375em $amble;
+        font-weight: 300;
+        line-height: 2.25em;
+        color: #222;
+    }
+}
+
+.paralax {
+    width: 100%;
+    height: 37.500em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:
+        url('../static/introduction.png'),
+        linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1))
+    ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    .button {
+        color: #fff;
+        border: 3px solid #ffff;
+        letter-spacing: 1.2px;
+        font: 1.575em $amble;
+        padding: 1em 5.250em;
+        cursor: pointer;
+        transition: all .4s;
+
+        &:hover {
+            background-color: #fff;
+            color: #222;
+        }
+    }
+}
+
+.movie-paralax {
+    button {
+        background-color: transparent;
+        border: none;
+        outline: none;
+
+        img {
+            cursor: pointer;
+            width: 4em;
+            height: 4em;
+        }
+    }
+}
+
+.quote-paralax {
+    background:
+        url('../static/imac.png'),
+        linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1))
+    ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}

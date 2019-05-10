@@ -1,0 +1,90 @@
+@import 'var';
+
+.portfolio {
+    &__nav {
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            list-style-type: none;
+            justify-content: center;
+
+            li {
+                margin: 0 2.313em;
+
+                a {
+                    text-decoration: none;
+                    color: #222;
+                    font-size: 1.125em;
+                    font-family: $joe;
+                    font-weight: bold;
+                
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+                .highlighted {
+                    font-family: $john;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+
+    &__projects {
+        list-style-type: none;
+        display: grid;
+        grid-gap: 1.25em;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+
+        .project {
+            
+            position: relative;
+            color: #fff;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+            }
+
+            .layer {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                background-color: rgba(0, 0, 0, .75);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                transform: translateY(-100%);
+                transition: transform .3s;
+            }
+
+            &:hover .layer {
+                transform: translateY(0);
+            }
+
+            &__type {
+                font: 1.125em $john;
+            }
+
+            &__title {
+                margin: 2.063em 0;
+                font: 1.5em $amble;
+            }
+            
+            hr {
+                background-color: #d87843;
+            }
+        }
+    }
+
+    .button {
+        margin: 5em 0;
+        padding: 1.375em 6.25em;
+        grid-column: 1 / 4;
+        font-size: 1.5em;
+    }
+}

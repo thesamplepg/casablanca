@@ -5,9 +5,303 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Casoblanca</title>
-    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
 </head>
 <body>
-    <h1>Aktan</h1>
+    <header class="main-header">
+        <h1 class="main-header__hero-text">We’ve got the talent</h1>
+        <hr/>
+        <div class="main-header__description">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+        </div>
+        <svg class="scroll-button" id="SVGDoc" width="30" height="48" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 30 48">
+            <path d="M15,-0.00008c8.28419,0 14.99996,6.7153 14.99996,15.00001v17.9999c0,8.28419 -6.71577,15.00001 -14.99996,15.00001c-8.28428,0 -15.00006,-6.71582 -15.00006,-15.00001v-17.9999c0,-8.2847 6.71577,-15.00001 15.00006,-15.00001zM12.99995,12.49975v6.99976c0,1.38078 1.11933,2.50017 2.49996,2.50017c1.38073,0 2.50006,-1.11939 2.50006,-2.50017v-6.99976c0,-1.38078 -1.11933,-2.50017 -2.50006,-2.50017c-1.38063,0 -2.49996,1.11939 -2.49996,2.50017z" fill="#ffffff" fill-opacity="1">  
+            </path>
+        </svg>
+    </header>
+    <section class="introduction-section">
+        <div class="section-header">
+            <h2>Introduction</h2>
+            <hr>
+            <div class="section-header__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+            </div>
+        </div>
+    </section>
+    <div class="introduction-paralax paralax">
+        <div class="button">
+            Pure Creativity
+        </div>
+    </div>
+    <section class="portfolio container">
+        <div class="section-header">
+            <h2>Some of our work</h2>
+            <hr>
+            <nav class="portfolio__nav">
+                <ul>
+                    <li><a class="highlighted" href="#">all</a></li>
+                    <li><a href="#">branding</a></li>
+                    <li><a href="#">web design</a></li>
+                    <li><a href="#">mobile ui</a></li>
+                    <li><a href="#">illustrations</a></li>
+                </ul>
+            </nav>
+        </div>
+        <ul class="portfolio__projects">
+            <li class="project">
+                <img src="./static/first-project.png" alt="project">
+                <div class="layer">
+                    <h3 class="project__type">
+                        landing page
+                    </h3>
+                    <span class="project__title">
+                        Perfecto
+                    </span>
+                    <hr/>
+                </div>
+            </li>
+            <li class="project">
+                <img src="./static/second-project.png" alt="project">
+                <div class="layer">
+                    <h3 class="project__type">
+                        tourism webapp
+                    </h3>
+                    <span class="project__title">
+                        OCEAN BLUE
+                    </span>
+                    <hr/>
+                </div>
+            </li>
+            <li class="project">
+                <img src="./static/third-project.png" alt="project">
+                <div class="layer">
+                    <h3 class="project__type">
+                        mobile ui
+                    </h3>
+                    <span class="project__title">
+                        Google Mail
+                    </span>
+                    <hr/>
+                </div>
+            </li>
+            <li class="project">
+                <img src="./static/fourth-project.png" alt="project">
+                <div class="layer">
+                    <h3 class="project__type">
+                        desktop app
+                    </h3>
+                    <span class="project__title">
+                        Portico
+                    </span>
+                    <hr/>
+                </div>
+            </li>
+            <li class="project">
+                <img src="./static/fifth-project.png" alt="project">
+                <div class="layer">
+                    <h3 class="project__type">
+                        mobile app
+                    </h3>
+                    <span class="project__title">
+                        Smosh
+                    </span>
+                    <hr/>
+                </div>
+            </li>
+            <li class="project">
+                <img src="./static/sixth-prject.png" alt="project">
+                <div class="layer">
+                    <h3 class="project__type">
+                        landing page
+                    </h3>
+                    <span class="project__title">
+                        SALT
+                    </span>
+                    <hr/>
+                </div>
+            </li>
+        </ul>  
+        <div class="container-center">
+            <button class="button btn-transparent-black">
+                Show me more
+            </button>
+        </div> 
+    </section>
+    <div class="clients-paralax paralax">
+        <div class="button">
+                We’re here to help.
+        </div>
+    </div>
+    <section class="clients">
+        <div class="section-header">
+            <h2>our clients</h2>
+            <hr>
+            <ul class="clients__logos container">
+                <li><img src="./static/google.png" alt="logo"></li>
+                <li><img src="./static/samsung.png" alt="logo"></li>
+                <li><img src="./static/flickr.png" alt="logo"></li>
+                <li><img src="./static/foursquare.png" alt="logo"></li>
+                <li><img src="./static/pinterest.png" alt="logo"></li>
+            </ul>
+        </div>
+    </section>
+    <section class="about-us">
+        <div class="section-header">
+            <h2>about us</h2>
+            <hr>
+            <div class="section-header__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+            </div>
+        </div>
+        <ul class="persons container">
+            <li class="person">
+                <div class="layer">
+                    <img src="./static/linked.png" alt="link">
+                    <h2 class="person__name">
+                        John
+                    </h2>
+                    <span class="person__position">CEO/Founder</span>
+                </div>
+                <img src="./static/john.png" alt="person">
+            </li>
+            <li class="person">
+                <div class="layer">
+                    <img src="./static/linked.png" alt="link">
+                    <h2 class="person__name">
+                        Nina
+                    </h2>
+                    <span class="person__position">Product manager</span>
+                </div>
+                <img src="./static/nina.png" alt="person">
+            </li>
+            <li class="person">
+                <div class="layer">
+                    <img src="./static/linked.png" alt="link">
+                    <h2 class="person__name">
+                        Anna
+                    </h2>
+                    <span class="person__position">Designer</span>
+                </div>
+                <img src="./static/anna.png" alt="person">
+            </li>
+            <li class="apply-section">
+                <h2>we are hiring</h2>
+                <hr>
+                <button class="apply-button btn-transparent-black">
+                    Apply
+                </button>
+            </li>
+        </ul>
+    </section>
+    <div class="movie-paralax paralax">
+        <button>
+            <img src="./static/play.png" alt="play-button">
+        </button>
+    </div>
+    <section class="advantages-section">
+        <div class="section-header">
+            <h2>why choose us</h2>
+            <hr>
+            <div class="section-header__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+            </div>
+        </div>
+        <div class="advantages-section__carousel container">
+            <ul class="advantages-list swiper-wrapper">
+                <li class="advantages-list__item swiper-slide">
+                    <img src="./static/iphone.png" alt="product"/>
+                    <h3 class="">App Design</h3>
+                    <div class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporilabore et dolore.
+                    </div>
+                </li>
+                <li class="advantages-list__item swiper-slide">
+                    <img src="./static/ipad.png" alt="product"/>
+                    <h3 class="">Responsive Layout</h3>
+                    <div class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporilabore et dolore.
+                    </div>
+                </li>
+                <li class="advantages-list__item swiper-slide">
+                    <img src="./static/mabcbook.png" alt="product"/>
+                    <h3 class="">Pixel Perfect Design</h3>
+                    <div class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporilabore et dolore.
+                    </div>
+                </li>
+                <li class="advantages-list__item swiper-slide">
+                    <img src="./static/iphone.png" alt="product"/>
+                    <h3 class="">App Design</h3>
+                    <div class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporilabore et dolore.
+                    </div>
+                </li>
+                <!-- <li class="advantages-list__item swiper-slide">
+                    <img src="./static/ipad.png" alt="product"/>
+                    <h3 class="">Responsive Layout</h3>
+                    <div class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                    </div>
+                </li>
+                <li class="advantages-list__item swiper-slide">
+                    <img src="./static/mabcbook.png" alt="product"/>
+                    <h3 class="">Pixel Perfect Design</h3>
+                    <div class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                    </div>
+                </li> -->
+            </ul>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <div class="quote-paralax paralax">
+        <div class="button">
+            Get a quote now
+        </div>
+    </div>
+    <section class="contact-section">
+        <div class="section-header">
+            <h2>Get in touch</h2>
+            <hr>
+            <div class="section-header__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="location">
+                <h2>our location</h2>
+                <div class="address">
+                    174 Mimosa ST. NW
+                    Casablanca, MA 20370
+                    (212) 123 456 7
+                    Samir Timezguida
+                </div>
+                <ul class="social-buttons">
+                    <li><a href="#"><img src="./static/twitter.png" alt="social"></a></li>
+                    <li><a href="#"><img src="./static/facebook.png" alt="social"></a></li>
+                    <li><a href="#"><img src="./static/linkedIn.png" alt="social"></a></li>
+                    <li><a href="#"><img src="./static/vk.png" alt="social"></a></li>
+                    <li><a href="#"><img src="./static/be.png" alt="social"></a></li>
+                </ul>
+            </div>
+            <form class="contact-section__form" enctype="application/x-www-form-urlencoded" action="/contact" method="POST">
+                <input required="true" name="name" type="text" placeholder="Name">
+                <input required="true" name="email" type="email" placeholder="Email">
+                <input required="true" name="password" type="password" placeholder="Password">
+                <div class="container-center send-button">
+                    <button type="submit" class="btn-transparent-black">
+                        Send
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="main-footer">
+        <img src="./static/footer-logo.png" alt="logo">
+        <p>2014 &copy; <span>Samir Timezguida.</span> All Rights Reserved.</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>
