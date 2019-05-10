@@ -22,6 +22,20 @@
         img {
             width: 8.75em;
             height: 3em;
+            filter: grayscale(1);
+            transition: filter .3s;
+
+            &:hover {
+                filter: none;
+            }
+        }
+    }
+
+    @media screen and (max-width: 550px) {
+        &__logos {
+            li {
+                margin: 1em;
+            }
         }
     }
 }

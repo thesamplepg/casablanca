@@ -46,4 +46,18 @@
             height: 3em;
         }
     }
+
+    @media screen and (max-width: 1024px) {
+        height: 500px;
+
+        svg {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 620px) {
+        height: 300px;
+
+        font-size: .8em;
+    }
 }

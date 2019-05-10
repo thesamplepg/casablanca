@@ -11,6 +11,7 @@
         .location {        
             padding: 7.5em 0;
             margin: 0 auto;
+            text-align: center;
 
             h2 {
                 font: 1.5em $john;
@@ -27,9 +28,13 @@
 
             .social-buttons {
                 list-style: none;
-                display: grid;
-                grid-template-columns: repeat(5, 1fr);
+                display: flex;
+                justify-content: space-between;
                 align-items: center;
+
+                li {  
+                    transform: scale(.8);
+                }
             }
         }
 
@@ -68,12 +73,6 @@
                 grid-column: 1 / 3;
             }
 
-            @media screen and (max-width: 1450px) {
-                input {
-                    grid-column: 1 / 3;
-                }
-            }
-
             .send-button {
                 grid-column: 2 / 3;
 
@@ -81,6 +80,22 @@
                     padding: 1.3em 4em;
                 }
             }
+        }
+
+        @media screen and (max-width: 1024px) {
+            grid-template-columns: repeat(2, 1fr);
+            
+            .contact-section__form {
+                padding: 10%;
+
+                input {
+                    grid-column: 1 / 3 !important;
+                }
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            grid-template-columns: 1fr;
         }
     }
 }

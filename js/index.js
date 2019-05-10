@@ -20,6 +20,14 @@ window.onload = (function(){
           el: '.swiper-pagination',
           clickable: true,
         },
+        breakpoints: {
+            1024: {
+                slidesPerView: 2
+            },
+            570: {
+                slidesPerView: 1
+            }
+        }
     });
 
 })();
