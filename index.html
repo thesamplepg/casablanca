@@ -10,6 +10,9 @@
 </head>
 <body>
     <header class="main-header">
+        <svg class="main-header__adaptive-button" xmlns="http://www.w3.org/2000/svg" width="30" height="24" viewBox="0 0 30 24">
+            <path fill="#fff" d="M0 20h30v4H0zm0-10h30v4H0zM0 0h30v4H0z"/>
+        </svg>
         <h1 class="main-header__hero-text">We’ve got the talent</h1>
         <hr/>
         <div class="main-header__description">
@@ -163,7 +166,7 @@
                     </h2>
                     <span class="person__position">CEO/Founder</span>
                 </div>
-                <img src="./static/john.png" alt="person">
+                <img src="./static/john.png" class="person__image" alt="person">
             </li>
             <li class="person">
                 <div class="layer">
@@ -173,7 +176,7 @@
                     </h2>
                     <span class="person__position">Product manager</span>
                 </div>
-                <img src="./static/nina.png" alt="person">
+                <img src="./static/nina.png" class="person__image" alt="person">
             </li>
             <li class="person">
                 <div class="layer">
@@ -183,7 +186,7 @@
                     </h2>
                     <span class="person__position">Designer</span>
                 </div>
-                <img src="./static/anna.png" alt="person">
+                <img src="./static/anna.png" class="person__image" alt="person">
             </li>
             <li class="apply-section">
                 <h2>we are hiring</h2>
@@ -195,7 +198,7 @@
         </ul>
     </section>
     <div class="movie-paralax paralax">
-        <button data-toggler="scaleUp">
+        <button>
             <img src="./static/play.png" alt="play-button">
         </button>
     </div>
@@ -276,7 +279,7 @@
                 <input required="true" name="email" type="email" placeholder="Email">
                 <input required="true" name="password" type="password" placeholder="Password">
                 <div class="container-center send-button">
-                    <button type="submit" class="btn-transparent-black" data-toggler="scaleUp">
+                    <button type="submit" class="btn-transparent-black">
                         Send
                     </button>
                 </div>

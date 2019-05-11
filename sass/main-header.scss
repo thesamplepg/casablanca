@@ -34,7 +34,13 @@
         font-weight: 400;
     }
 
-    svg {
+    &__adaptive-button {
+        position: absolute;
+        left: 2em;
+        top: 2em;
+    }
+
+    .scroll-button {
         position: absolute;
         bottom: 4.125em;
         cursor: pointer;
@@ -50,7 +56,7 @@
     @media screen and (max-width: 1024px) {
         height: 500px;
 
-        svg {
+        .scroll-button {
             display: none;
         }
     }
