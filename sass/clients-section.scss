@@ -1,41 +1,39 @@
-@import 'var';
+@import "var";
 
 .clients-paralax {
-    background:
-        url('../static/clients.png'),
-        linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1))
-    ;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+  background: url("../static/clients.png"),
+    linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .clients {
-    background-color: #f4f4f4;
+  background-color: #f4f4f4;
 
+  &__logos {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    img {
+      width: 8.75em;
+      height: 3em;
+      filter: grayscale(1);
+      transition: filter 0.3s;
+
+      &:hover {
+        filter: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: 550px) {
     &__logos {
-        list-style-type: none;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-
-        img {
-            width: 8.75em;
-            height: 3em;
-            filter: grayscale(1);
-            transition: filter .3s;
-
-            &:hover {
-                filter: none;
-            }
-        }
+      li {
+        margin: 1em;
+      }
     }
-
-    @media screen and (max-width: 550px) {
-        &__logos {
-            li {
-                margin: 1em;
-            }
-        }
-    }
+  }
 }

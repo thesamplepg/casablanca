@@ -1,27 +1,27 @@
-@import 'var';
+@import "var";
 
 .main-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 6.25em 0;
-    text-align: center;
-    background-color: #222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6.25em 0;
+  text-align: center;
+  background-color: #222;
 
-    p {
-        margin-top: 4em;
-        color: #e4e4e4;
-        font-family: $amble;
+  p {
+    margin-top: 4em;
+    color: #e4e4e4;
+    font-family: $amble;
 
-        span {
-            color: #d87843;
-            font-family: $ambleBold
-        }
+    span {
+      color: #d87843;
+      font-family: $ambleBold;
     }
+  }
 
-    @media screen and (max-width: 400px) {
-        img {
-            width: 90%;
-        }
+  @media screen and (max-width: 400px) {
+    img {
+      width: 90%;
     }
+  }
 }

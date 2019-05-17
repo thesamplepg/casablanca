@@ -1,53 +1,51 @@
-@import 'var';
+@import "var";
 
 .advantages-section {
-    padding-bottom: 5.625em;
+  padding-bottom: 5.625em;
 
-    &__carousel {
-        position: relative;
-        overflow: hidden;
-        padding-bottom: 7.625em;
+  &__carousel {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 7.625em;
 
-        .swiper-wrapper {
-            cursor: pointer;
-            list-style: none;
-            display: grid;
-            grid-auto-flow: column;
-            grid-template-columns: repeat(4, 1fr);
-            align-items: baseline;
-            justify-items: center;
-            font-size: 1em;
+    .swiper-wrapper {
+      cursor: pointer;
+      list-style: none;
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-columns: repeat(4, 1fr);
+      align-items: baseline;
+      justify-items: center;
+      font-size: 1em;
 
-            .swiper-slide {
-                text-align: center;
-                color: #222;
+      .swiper-slide {
+        text-align: center;
+        color: #222;
 
-                h3 {
-                    font: 1.5em $amble;
-                    margin: 2.625rem 0;
-                }
-
-                .description {
-                    line-height: 2.25em !important;
-                    font: 1.05rem $amble;
-                    padding: 0 2em;
-                }
-            }
+        h3 {
+          font: 1.5em $amble;
+          margin: 2.625rem 0;
         }
 
-        .swiper-pagination {
-            
-            span {
-                background-color: #d87843;
-                width: 12px;
-                height: 12px;
-            }
-
-            .swiper-pagination-bullet-active {
-                opacity: 1;
-                background: #d87843;
-            }
+        .description {
+          line-height: 2.25em !important;
+          font: 1.05rem $amble;
+          padding: 0 2em;
         }
-        
+      }
     }
+
+    .swiper-pagination {
+      span {
+        background-color: #d87843;
+        width: 12px;
+        height: 12px;
+      }
+
+      .swiper-pagination-bullet-active {
+        opacity: 1;
+        background: #d87843;
+      }
+    }
+  }
 }

@@ -1,29 +1,35 @@
 //fonts
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-@import 'fonts';
-@import 'blocks';
-@import 'main-header';
-@import 'portfolio-section';
-@import 'clients-section';
-@import 'about-section';
-@import 'advantages-section';
-@import 'contact-section';
-@import 'footer';
+@import "fonts";
+@import "blocks";
+@import "main-header";
+@import "portfolio-section";
+@import "clients-section";
+@import "about-section";
+@import "advantages-section";
+@import "contact-section";
+@import "footer";
 
 @media screen and (max-width: 1376px) {
-    body {
-        font-size: 12px;
-    }
+  body {
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    body {
-        font-size: 8px;
-    }
+  body {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 6px;
+  }
 }
